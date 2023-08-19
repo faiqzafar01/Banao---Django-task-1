@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/signup.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">SignUp Page</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="firstName">First Name</label>
+            <input type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter First Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="lastName">Last Name</label>
+            <input type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Enter Last Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="userName">User Name</label>
+            <input type="text"
+                    id="userName"
+                    name="userName"
+                    placeholder="Enter User Name"/>
+          </div>       
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+
+          <div class="user-input-box">
+            <label for="address">Address line 1</label>
+            <input type="address"
+                    id="address"
+                    name="address"
+                    placeholder="Enter Address line 1"/>
+          </div>
+          <div class="user-input-box">
+            <label for="city">City</label>
+            <input type="city"
+                    id="city"
+                    name="city"
+                    placeholder="Enter City"/>
+          </div>
+          <div class="user-input-box">
+            <label for="state">State</label>
+            <input type="state"
+                    id="state"
+                    name="state"
+                    placeholder="Enter State"/>
+          </div>
+          <div class="user-number-box">
+            <label for="pincode">Pincode</label>
+            <input type="pincode"
+                    id="pincode"
+                    name="pincode"
+                    placeholder="Enter Pincode"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="+91 Enter Phone Number"/>
+          </div>      
+          
+          <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other">
+              <label for="other">Other</label>
+            </div>
+          </div>       
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm Password"/>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">User</span>
+          <div class="gender-category">
+            <input type="radio" name="user" id="doctor">
+            <label for="doctor">Doctor</label>
+            <input type="radio" name="user" id="patient">
+            <label for="patient">Patient</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Sign Up">
+        </div>
+
+        <div class="form-link">
+          <span>Already have an account ?  <a href="login" class="login-link">Login</a></span>
+      </div>
+
+
+      </form>
+    </div>
+  </body>
+</html>
