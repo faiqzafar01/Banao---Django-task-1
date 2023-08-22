@@ -28,9 +28,31 @@
 
                     <div class='field input-field'>
                         <label for="password">Password</label>
-                        <input type="Password" placeholder="Enter Your Password" class="password">
-                        <i class='bx bx-hide eye-icon'></i>
+                        <input type="Password" placeholder="Enter Your Password" id="password">
+                        <i class='bx bx-hide eye-icon' id="eyeicon"></i>
                     </div>
+
+                    <script>
+
+                        let eyeicon = document.getElementById("eyeicon");
+                        let password = document.getElementById("password");
+                        eyeicon.onclick = function(){
+                            if (password.type == "password"){
+                                password.type = "text";
+                                eyeicon.src = "/static/images/icons8-open-50.png";
+                            }else{
+                                password.type = "password";
+                                eyeicon.src = "/static/images/icons8-hide-50.png";
+
+                            }
+                        }
+
+
+
+                    </script>
+
+
+
 
                      <div class="form-link">
                         <a href="#" class="forget-pass">Forgot password?</a>
